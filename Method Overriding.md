@@ -13,8 +13,25 @@ To write a Python program that demonstrates class inheritance by creating a pare
 6. Within the loop, call the `type()` method using the loop variable.
 7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
 
-## 💻 PROGRAM:
+## 💻 PROGRAM
+```
+class Fish:
+    def type(self):
+        print("fish")
+
+class Shark(Fish):
+    def type(self):
+        print("shark")
+
+obj_goldfish = Fish()
+obj_hammerhead = Shark()
+
+for obj in (obj_goldfish, obj_hammerhead):
+    obj.type()
+```
 
 ## OUTPUT
+<img width="513" height="307" alt="image" src="https://github.com/user-attachments/assets/2634bfc5-e774-4b17-a6e3-672f41c1689b" />
 
 ## RESULT
+Thus,the program has been executed successfully.
